@@ -14,6 +14,22 @@ Face detection example:
 
 ![face detection example](./face_detection_with_SVMs/code/visualizations/detections_madaboutyou.jpg.png)
 
+## Efficient Graph-Based Image Segmentation
+
+A fast Python implementation of the classic image segmentation algorithm by Felzenszwalb and Huttenlocher.
+
+Examples:
+
+- beach.jpg:
+
+![](./graph_based_image_segmentation/input_images/beach.jpg)
+![](./graph_based_image_segmentation/gallery/beach.jpg)
+
+- Ioannina clock tower:
+
+<img src="./graph_based_image_segmentation/input_images/ioannina_clock_tower.jpg" width="400"/>
+<img src="./graph_based_image_segmentation/gallery/ioannina_clock_tower.jpg" width="400"/>
+
 ## Histogram Equalization
 
 An implementation of the contrast enhancement technique known as histogram equalization.
