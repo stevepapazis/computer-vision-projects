@@ -2,7 +2,7 @@
 
 A collection of computer vision projects implemented in various languages
 
-## Detecting Faces with SVMs
+## Detecting Faces with SVMs [⤴](./face_detection_with_SVMs)
 
 A simple face detector that uses a Support Vector Machine (SVM) trained on Histograms of Oriented Gradients (HOG).
 
@@ -14,7 +14,7 @@ Face detection example:
 
 ![face detection example](./face_detection_with_SVMs/code/visualizations/detections_madaboutyou.jpg.png)
 
-## Efficient Graph-Based Image Segmentation
+## Efficient Graph-Based Image Segmentation [⤴](./graph_based_image_segmentation)
 
 A fast Python implementation of the classic image segmentation algorithm by Felzenszwalb and Huttenlocher.
 
@@ -28,7 +28,8 @@ Examples:
 - Ioannina clock tower:
 
 <img src="./graph_based_image_segmentation/input_images/ioannina_clock_tower.jpg" width="400"/> <img src="./graph_based_image_segmentation/gallery/ioannina_clock_tower.jpg" width="400"/>
-## Histogram Equalization
+
+## Histogram Equalization [⤴](./histogram_equalization)
 
 An implementation of the contrast enhancement technique known as histogram equalization.
 
