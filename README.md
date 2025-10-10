@@ -27,9 +27,7 @@ Examples:
 
 - Ioannina clock tower:
 
-<img src="./graph_based_image_segmentation/input_images/ioannina_clock_tower.jpg" width="400"/>
-<img src="./graph_based_image_segmentation/gallery/ioannina_clock_tower.jpg" width="400"/>
-
+<img src="./graph_based_image_segmentation/input_images/ioannina_clock_tower.jpg" width="400"/> <img src="./graph_based_image_segmentation/gallery/ioannina_clock_tower.jpg" width="400"/>
 ## Histogram Equalization
 
 An implementation of the contrast enhancement technique known as histogram equalization.
