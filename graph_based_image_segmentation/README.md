@@ -48,7 +48,7 @@ options:
 
 ## Gallery
 
-### Effect of the scale factor k (L∞ distance)
+### Effect of the scale factor k (the L∞ distance is used)
 
 | **Input** | **k=100** | **k = 300**|
 |:--:|:--:| :--: |
