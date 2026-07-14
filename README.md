@@ -37,7 +37,7 @@ An octave implementation of the classic image resizing algorithm.
 
 The vertical/horizontal seams with the lowest energy are iteratively removed until the target width/height is reached.
 
-[lake_preview.webm](./seam_carving_octave/gallery/lake_preview.webm)
+[lake_preview.webm](https://github.com/user-attachments/assets/db24761c-e2ba-43b6-97a7-0f5be9e24fad)
 
 ## Histogram Equalization [⤴](./histogram_equalization)
 
