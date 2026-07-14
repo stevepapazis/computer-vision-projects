@@ -230,8 +230,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output", "-o",
         help="path to the output image",
-        type=Path,
-        required=True
+        type=Path
     )
 
     def _test_number_validity(condition):
@@ -249,8 +248,7 @@ if __name__ == "__main__":
         "--scale-factor", "-k",
         help="positive scale constant controlling the trade-off between detail and region size (default: %(default)s)",
         type=_test_number_validity(lambda x: x>=0),
-        required=True,
-        default=300
+        default=300.0
     )
 
     parser.add_argument(
@@ -264,7 +262,7 @@ if __name__ == "__main__":
         "--minimal-acceptable-size", "-m",
         help="""positive value defining the minimum size (in pixels) of an acceptable component (default: %(default)s)""",
         type=_test_number_validity(lambda x: x>=0),
-        default=50,
+        default=50.0,
     )
 
     parser.add_argument(
@@ -281,7 +279,13 @@ if __name__ == "__main__":
             or p=0 for L_infinity(x,y) = max_i |x_i - y_i| (default: %(default)s)""",
         type=_test_number_validity(lambda x: x>=1 or x==0),
         metavar="{p>=1 or p==0}",
-        default=2,
+        default=2.0,
+    )
+
+    parser.add_argument(
+        "--branding", "-b",
+        help="include the input parameters in the name of the output file",
+        action="store_true"
     )
 
     parser.add_argument(
@@ -300,7 +304,27 @@ if __name__ == "__main__":
     palette = args.palette
     p = args.weighting_function
     lp_distance = compute_Linfinity_distance if p==0 else partial(compute_Lp_distance, p=p)
+    branding = args.branding
     verbose = args.verbose
+
+    parameters = [
+        f"k={scale_factor}",
+        f"s={sigma}",
+        f"l{p}" if p!=0 else "linfty",
+        f"m={minimal_acceptable_size}",
+        palette
+    ]
+
+    if output_image is None:
+        branding = True
+        output_image = input_image
+
+    if branding:
+        name = output_image.stem
+        suffix = output_image.suffix
+        output_image = output_image.with_name(
+            f"{name}_" + "_".join(parameters) + suffix
+        )
 
     start = time.time()
 
