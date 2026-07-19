@@ -1,2 +1,4 @@
+seam_carving_octave/functions/** linguist-language=MATLAB
+face_detection_with_SVMs/code/** linguist-language=MATLAB
 face_detection_with_SVMs/code/vlfeat/** linguist-vendored
 face_detection_with_SVMs/data/** linguist-vendored

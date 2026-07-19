@@ -35,9 +35,9 @@ Examples:
 
 An Octave implementation of the classic image resizing algorithm.
 
-The vertical/horizontal seams with the lowest energy are iteratively removed until the target width/height is reached.
+The minimum-energy vertical or horizontal seams (shown in red) are iteratively removed until the target width or height is reached.
 
-| Image | Energy | Minimum Energy Seams |
+| Image | Energy Map | Cumulative Energy Map |
 | :---: | :---: | :---: |
 |<img width="240" height="180" alt="lake_h200_linfty" src="https://github.com/user-attachments/assets/bf89e373-cae1-4fcd-9e34-3f3b6260ecdc" />|<img width="240" height="180" alt="lake_h200_linfty_energy" src="https://github.com/user-attachments/assets/eecf7ec3-26a2-40f6-8e9e-7a9985999686" />|<img width="240" height="180" alt="lake_h200_linfty_minEnergy" src="https://github.com/user-attachments/assets/417f5c57-9cc5-495f-92b8-aa24bdb1beff" />|
 |<img width="240" height="180" alt="lake_v200_linfty" src="https://github.com/user-attachments/assets/79ad0f3e-f0ef-41d8-8894-5188b89ddd4b" />|<img width="240" height="180" alt="lake_v200_linfty_energy" src="https://github.com/user-attachments/assets/4be839f0-b5a7-4dee-b7c3-d0f2fc7471b7" />|<img width="240" height="180" alt="lake_v200_linfty_minEnergy" src="https://github.com/user-attachments/assets/cbe67919-5ad6-4f15-8f8e-f96de46c2001" />|
